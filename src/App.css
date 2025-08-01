@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.App {
+  text-align: center;
+}
+
+.hero {
+  background-color: #0c63e4;
+  color: white;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: white;
+  color: #0c63e4;
+  border: none;
+  cursor: pointer;
+}
+
+.features {
+  padding: 60px 20px;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+}

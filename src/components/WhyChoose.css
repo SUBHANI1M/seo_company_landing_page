@@ -1,0 +1,254 @@
+/* Container Grid */
+.temp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px 30px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Card Wrapper */
+.card-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 742px;
+  aspect-ratio: 458 / 229;
+  margin: 0 auto;
+}
+.whyContainer {
+  background-color: #fff;
+  padding: 5px 210px;
+  text-align: center;
+}
+/* Long Hexagon (Outer Border) */
+.long-hexagon-border {
+  position: absolute;
+  inset: 0;
+  background-color: #337aff;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  z-index: 1;
+}
+
+/* Long Hexagon (Inner Layer) */
+.long-hexagon-inner {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  font-size: clamp(14px, 1.2vw, 18px);
+  line-height: 1.4;
+  z-index: 2;
+  text-align: left;
+}
+
+.long-hexagon-inner.left {
+  padding-left: 120px;
+}
+
+.long-hexagon-inner.right {
+  padding-right: 120px;
+  text-align: right;
+}
+
+/* Final card (CTA) styling */
+.long-hexagon-inner.final-card {
+  background: linear-gradient(145deg, #e0ebff, #ffffff);
+  justify-content: center;
+  text-align: center;
+}
+
+/* Small Hexagon Border */
+.regular-hexagon-border {
+  position: absolute;
+  width: 110px;
+  height: 125px;
+  background-color: #ff5733;
+  clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+  z-index: 3;
+  transform: rotate(90deg);
+  top: -20px;
+}
+
+.regular-hexagon-border.left {
+  left: -61px;
+  top: 25px;
+  width: 46%;
+  height: 83%;
+}
+
+.regular-hexagon-border.right {
+  right: -61px;
+  top: 25px;
+  width: 46%;
+  height: 83%;
+}
+.content-list {
+  width: 90%;
+  text-align: left;
+}
+.content-list li {
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+
+/* Small Hexagon Inner */
+.regular-hexagon-inner {
+  position: absolute;
+  width: 102px;
+  height: 115px;
+  background-color: #fff;
+  clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+  transform: rotate(90deg);
+  top: 4px;
+  padding-top: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 4;
+}
+
+.regular-hexagon-inner.left {
+  left: -50px;
+  top: 31px;
+  width: 42%;
+  height: 79%;
+  justify-content: space-evenly;
+}
+.regular-hexagon-inner.right {
+  right: -50px;
+  top: 31px;
+  width: 42%;
+  height: 79%;
+  justify-content: space-evenly;
+}
+
+.regular-hexagon-inner.right {
+  right: -50px;
+}
+
+.imageCotainer {
+  transform: rotate(270deg);
+}
+
+/* Image inside Hex */
+.hex-img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 6px;
+}
+
+/* Heading inside Hex */
+.hex-heading {
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 700;
+  margin: 0;
+  color: #222;
+  text-align: center;
+}
+
+/* Extra Paragraph */
+.extra-para {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #333;
+}
+
+/* CTA Button */
+.cta-button {
+  margin-top: 12px;
+  padding: 10px 20px;
+  background-color: #337aff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #225ed9;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .card-wrapper {
+    max-width: 100%;
+    aspect-ratio: auto;
+    height: auto;
+  }
+
+  .long-hexagon-inner {
+    font-size: 15px;
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+  }
+
+  .regular-hexagon-border {
+    width: 90px;
+    height: 100px;
+    top: -16px;
+  }
+
+  .regular-hexagon-border.left {
+    left: -45px;
+  }
+
+  .regular-hexagon-border.right {
+    right: -45px;
+  }
+
+  .regular-hexagon-inner {
+    width: 84px;
+    height: 92px;
+    padding-top: 10px;
+    top: 4px;
+  }
+
+  .regular-hexagon-inner.left {
+    left: -40px;
+  }
+
+  .regular-hexagon-inner.right {
+    right: -40px;
+  }
+
+  .hex-img {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 4px;
+  }
+
+  .hex-heading {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .long-hexagon-inner {
+    font-size: 14px;
+    padding: 16px 20px;
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+  }
+
+  .extra-para {
+    font-size: 0.95em;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

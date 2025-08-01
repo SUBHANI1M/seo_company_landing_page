@@ -1,0 +1,130 @@
+.seo-section {
+  background-color: #fff;
+  color: #000;
+  padding: 80px 20px;
+  font-family: "HK Grotesk", sans-serif;
+}
+
+.seo-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.seo-heading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 24px;
+  text-transform: capitalize;
+}
+
+.seo-paragraph {
+  font-size: 17px;
+  line-height: 140%;
+  color: #000;
+  margin-bottom: 16px;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.seo-subheading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+  margin: 60px 0 30px;
+  text-transform: capitalize;
+}
+
+/* === Grid Layout (3 on top row, 2 on second row centered) === */
+.seo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* First 3 cards — fill full width */
+.seo-grid .seo-card:nth-child(-n + 3) {
+  flex: 1 1 400px;
+}
+
+/* Last 2 cards — centered on a new row */
+.seo-grid .seo-card:nth-child(n + 4) {
+  flex: 0 1 400px;
+}
+
+/* === Card Styles === */
+.seo-card {
+  background-color: #f5f5f5;
+  color: #000;
+  border-radius: 8px;
+  padding: 24px;
+  width: 400px;
+  height: 266px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Icon Box */
+.seo-icon-box {
+  width: 82px;
+  height: 82px;
+  border-radius: 6.83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.seo-icon {
+  width: 44px;
+  height: 44px;
+  filter: brightness(0) invert(1); /* makes black icons white */
+}
+
+/* Card Heading */
+.seo-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Card Description */
+.seo-card-desc p {
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 0 0 4px 0;
+  color: #333;
+  text-align: left;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 1200px) {
+  .seo-grid {
+    justify-content: center;
+  }
+
+  .seo-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .seo-card {
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .seo-card-desc {
+    text-align: center;
+  }
+}

@@ -2,6 +2,11 @@
 import React from "react";
 import "./WhyChoose.css";
 import sampleImg from "../assets/auction.png";
+import earth from "../assets/earth.png";
+import lineChart from "../assets/line-chart.png";
+import search from "../assets/search.png";
+import target from "../assets/target.png";
+import employe from "../assets/employe.png";
 
 const cardsData = [
   {
@@ -9,7 +14,8 @@ const cardsData = [
     type: "card1",
     title: "Local Expertise in Dubai’s Market",
     content:
-      "Deep understanding of Dubai’s business environment, search trends, and customer behavior. Specialized strategies for local businesses, e-commerce, and industries like real estate, hospitality, and healthcare.",
+      "Deep understanding of Dubai’s business environment, search trends and customer behavior. Specialized strategies for local businesses, e-commerce, and industries like real estate, hospitality, and healthcare.",
+    image: earth,
   },
   {
     id: 2,
@@ -17,6 +23,7 @@ const cardsData = [
     title: "Proven Results with Data-Driven SEO",
     content:
       "100+ successful SEO campaigns across various industries. Client success stories with significant traffic growth and higher conversion rates.",
+    image: lineChart,
   },
   {
     id: 3,
@@ -24,6 +31,7 @@ const cardsData = [
     title: "Transparent & Insightful Reporting",
     content:
       "Monthly performance reports with key insights and actionable recommendations. 24/7 access to real-time analytics dashboards for full transparency.",
+    image: search,
   },
   {
     id: 4,
@@ -31,6 +39,7 @@ const cardsData = [
     title: "Customized SEO Strategies",
     content:
       "Tailor-made SEO solutions—no one-size-fits-all approach. Strategies built around your business goals, target audience, and competition.",
+    image: target,
   },
   {
     id: 5,
@@ -38,6 +47,7 @@ const cardsData = [
     title: "Dedicated Team of SEO Experts",
     content:
       "Certified SEO professionals with years of experience in Dubai SEO services. Continuous learning and adaptation to Google algorithm updates.",
+    image: employe,
   },
   {
     id: 6,
@@ -60,37 +70,37 @@ const WhyChoose = () => {
         digital landscape. Here’s why top brands trust us:
       </p>
       <div className="temp-grid">
-        {cardsData.map(({ id, type, title, content, button }) => {
+        {cardsData.map(({ id, type, title, content, image, button }) => {
           const isCard1 = type === "card1";
           const contentList = content
             .split(".")
             .map((line) => line.trim())
             .filter((line) => line.length > 0)
-            .slice(0, 2); // Limit to 2 items
+            .slice(0, 2);
 
           return (
             <div className="card-wrapper" key={id}>
               {!button && (
                 <>
                   <div
-                    className={`regular-hexagon-border ${
+                    className={` regular-hexagon-border card${id}   ${
                       isCard1 ? "left" : "right"
                     }`}
                   />
                   <div
-                    className={`regular-hexagon-inner ${
+                    className={`regular-hexagon-inner  ${
                       isCard1 ? "left" : "right"
                     }`}
                   >
                     <div className="imageCotainer">
-                      <img src={sampleImg} alt="icon" className="hex-img" />
+                      <img src={image} alt="icon" className="hex-img" />
                       <h3 className="hex-heading">{title}</h3>
                     </div>
                   </div>
                 </>
               )}
 
-              <div className="long-hexagon-border" />
+              <div className={`long-hexagon-border card${id}`} />
 
               <div
                 className={`long-hexagon-inner ${isCard1 ? "left" : "right"} ${

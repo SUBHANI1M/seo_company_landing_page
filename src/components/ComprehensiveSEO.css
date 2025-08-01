@@ -1,0 +1,73 @@
+.seo-container {
+  background-color: white;
+  padding: 40px;
+  max-width: 100%;
+  margin: auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.seo-heading {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.seo-content {
+  display: flex;
+  gap: 40px;
+  width: 90%;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.seo-list {
+  flex: 1;
+  padding: 60px 70px;
+  margin: 0;
+  text-align: left;
+  list-style: disc;
+  opacity: 1;
+  font-family: sans-serif;
+}
+
+.seo-list li {
+  padding: 12px 0;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.seo-list li.active {
+  color: #7c3aed; /* Purple */
+  font-weight: bold;
+}
+
+.seo-detail {
+  flex: 1;
+  background-color: #845ef71f; /* Tailwind red-400 */
+  padding: 30px;
+  border-radius: 12px;
+  color: #000;
+}
+
+.seo-detail h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+.seo-detail img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.seo-detail p {
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: left;
+  font-family: sans-serif;
+}

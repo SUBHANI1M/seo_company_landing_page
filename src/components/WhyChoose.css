@@ -60,7 +60,6 @@
 
 /* Final card (CTA) styling */
 .long-hexagon-inner.final-card {
-  background: linear-gradient(145deg, #e0ebff, #ffffff);
   justify-content: center;
   text-align: center;
 }
@@ -97,6 +96,24 @@
 .content-list li {
   margin-bottom: 15px;
   list-style-type: none;
+}
+.card1 {
+  background-color: #ec696a;
+}
+.card2 {
+  background-color: #302357;
+}
+.card3 {
+  background-color: #845ef7;
+}
+.card4 {
+  background-color: #ea7d30;
+}
+.card5 {
+  background-color: #e6b33d;
+}
+.card6 {
+  background-color: #ec696a;
 }
 
 /* Small Hexagon Inner */
@@ -137,6 +154,7 @@
 
 .imageCotainer {
   transform: rotate(270deg);
+  width: 50%;
 }
 
 /* Image inside Hex */
@@ -168,7 +186,7 @@
 .cta-button {
   margin-top: 12px;
   padding: 10px 20px;
-  background-color: #337aff;
+  background: #845ef7;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -182,73 +200,70 @@
 }
 
 /* Responsive Tweaks */
-@media (max-width: 768px) {
-  .card-wrapper {
-    max-width: 100%;
-    aspect-ratio: auto;
-    height: auto;
+@media (max-width: 1024px) {
+  .whyContainer {
+    padding: 5px 100px;
   }
 
-  .long-hexagon-inner {
-    font-size: 15px;
-    padding-left: 80px !important;
-    padding-right: 80px !important;
+  .long-hexagon-inner.left {
+    padding-left: 80px;
   }
 
-  .regular-hexagon-border {
-    width: 90px;
-    height: 100px;
-    top: -16px;
+  .long-hexagon-inner.right {
+    padding-right: 80px;
   }
 
-  .regular-hexagon-border.left {
-    left: -45px;
-  }
-
+  .regular-hexagon-border.left,
   .regular-hexagon-border.right {
-    right: -45px;
+    width: 50%;
+    height: 80%;
   }
 
-  .regular-hexagon-inner {
-    width: 84px;
-    height: 92px;
-    padding-top: 10px;
-    top: 4px;
-  }
-
-  .regular-hexagon-inner.left {
-    left: -40px;
-  }
-
+  .regular-hexagon-inner.left,
   .regular-hexagon-inner.right {
-    right: -40px;
+    width: 40%;
+    height: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .whyContainer {
+    padding: 5px 40px;
   }
 
-  .hex-img {
-    width: 36px;
-    height: 36px;
-    margin-bottom: 4px;
+  .long-hexagon-inner.left,
+  .long-hexagon-inner.right {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    justify-content: center;
   }
 
-  .hex-heading {
-    font-size: 13px;
+  .regular-hexagon-border.left,
+  .regular-hexagon-border.right,
+  .regular-hexagon-inner.left,
+  .regular-hexagon-inner.right {
+    display: none; /* Hide side hexes on smaller screens */
+  }
+
+  .temp-grid {
+    grid-template-columns: 1fr; /* stack cards */
+    gap: 30px;
   }
 }
 
 @media (max-width: 480px) {
-  .long-hexagon-inner {
-    font-size: 14px;
-    padding: 16px 20px;
-    padding-left: 70px !important;
-    padding-right: 70px !important;
+  .whyContainer {
+    padding: 5px 20px;
   }
 
-  .extra-para {
-    font-size: 0.95em;
+  .long-hexagon-inner {
+    font-size: 14px;
+    padding: 16px;
   }
 
   .cta-button {
-    font-size: 14px;
-    padding: 8px 16px;
+    width: 100%;
+    padding: 12px;
   }
 }

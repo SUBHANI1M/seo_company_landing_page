@@ -4,6 +4,7 @@
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -12,7 +13,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000; /* Black background for dark theme */
+  background-color: #fff; /* Black background for dark theme */
 }
 
 code {

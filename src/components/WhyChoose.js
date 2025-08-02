@@ -60,7 +60,7 @@ const cardsData = [
 
 const WhyChoose = () => {
   return (
-    <div className="whyContainer">
+    <div className="whyContainer" id="WhyChoose">
       <h2 className="why-heading">
         Why Choose Us as Your SEO Partner in Dubai?
       </h2>

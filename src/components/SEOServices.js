@@ -76,7 +76,7 @@ const services = [
 
 const SEOServices = () => {
   return (
-    <div className="seo-services-container">
+    <div className="seo-services-container" id="SEOServices">
       <h1 className="heading">Our Comprehensive SEO Services In Dubai</h1>
       <p className="subheading">
         At Brandstory, we offer a full suite of Dubai SEO services designed to

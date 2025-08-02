@@ -1,89 +1,103 @@
-.clients-container {
-  background: #f8f8f8;
+.testimonial-wrapper {
+  background-color: #f4f4f4;
   padding: 3rem 1rem;
   text-align: center;
+  font-family: "Segoe UI", sans-serif;
 }
 
-.title {
+.testimonial-heading {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
-.subtitle {
+.testimonial-subtitle {
   color: #555;
   margin-bottom: 2rem;
+  font-size: 1rem;
 }
 
-.slider {
-  position: relative;
+.testimonial-slider {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
-.card {
-  background: #fff;
+.nav-arrow {
+  background-color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 1rem;
+  z-index: 2;
+  margin: 10px;
+  border-radius: 100%;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 12px;
   display: flex;
-  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 80%;
-  max-width: 1000px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
+  max-width: 900px;
+  width: 100%;
+  transition: all 0.5s ease;
+  padding: 20px 20px;
 }
 
-.card img {
+.testimonial-image {
   width: 40%;
   object-fit: cover;
+  border-radius: 10%;
 }
 
-.card-content {
-  text-align: left;
+.testimonial-content {
   padding: 1.5rem;
   width: 60%;
+  text-align: left;
 }
 
-.card-content h3 {
+.testimonial-title {
   font-size: 1.2rem;
   font-weight: bold;
+  margin-bottom: 0.3rem;
 }
 
-.card-content ul {
+.testimonial-client {
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.testimonial-results {
+  margin-bottom: 1rem;
   padding-left: 1rem;
   list-style-type: disc;
 }
 
-.card-content blockquote {
-  margin-top: 1rem;
+.testimonial-quote {
   font-style: italic;
-  color: #333;
+  color: #444;
+  margin: 1rem 0;
 }
 
-.author {
-  margin-top: 0.5rem;
+.testimonial-author {
   font-weight: bold;
+  color: #222;
 }
 
-.arrow {
-  background: white;
-  border: none;
-  font-size: 2rem;
-  padding: 0 1rem;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.dots {
+.testimonial-dots {
   margin-top: 1rem;
 }
 
 .dot {
   height: 10px;
   width: 10px;
-  margin: 0 5px;
-  background-color: #bbb;
+  background: #bbb;
   border-radius: 50%;
   display: inline-block;
+  margin: 0 5px;
   cursor: pointer;
 }
 
@@ -91,16 +105,16 @@
   background-color: #333;
 }
 
-.cta {
+.testimonial-cta {
   margin-top: 2rem;
 }
 
-.audit-btn {
+.testimonial-button {
   background-color: #8c52ff;
   color: white;
+  padding: 0.7rem 1.5rem;
   border: none;
-  padding: 0.75rem 1.5rem;
   border-radius: 8px;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
 }

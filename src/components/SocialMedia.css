@@ -1,0 +1,40 @@
+.social-media-section {
+  background-color: #2e1d5c;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.social-media-heading {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icon-wrapper {
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 0 0 3px black;
+  transition: transform 0.3s ease;
+}
+
+.icon-wrapper:hover {
+  transform: scale(1.1);
+}
+
+.icon-wrapper img {
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,191 @@
+.serving-business-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+/* Header */
+.serving-business-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.serving-business-header h1 {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.location-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.location-map {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+/* Cards Container */
+.locations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Individual Card */
+.location-card {
+  background-color: #f7f7f7;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  width: calc(50% - 10px); /* 2 cards per row on desktop */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.location-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.location-card.active {
+  background-color: #b7d2f0;
+  color: #fff;
+}
+
+/* Card Image */
+.location-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 15%;
+  margin-right: 15px;
+  flex-shrink: 0;
+  border: 2px solid #ccc;
+}
+
+/* Card Text Content */
+.card-content {
+  flex: 1;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* SEO Audit Button */
+.seo-audit-button {
+  background-color: #8c52ff;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+  transition: background-color 0.3s ease;
+}
+
+.seo-audit-button:hover {
+  background-color: #357ab8;
+}
+
+/* SEO Info Section */
+.seo-info-card {
+  background: rgba(234, 125, 48, 1);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  margin: 20px auto;
+}
+
+.seo-info-card h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.seo-info-card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.seo-info-card ul {
+  margin-left: 20px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.seo-info-card .seo-contact {
+  width: 75%;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #fff;
+  display: flex;
+  column-gap: 10px;
+}
+.seo-info-card .seo-contact p {
+  border: 2px solid #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.seo-info-card .seo-contact a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.seo-info-card .seo-contact a:hover {
+  text-decoration: underline;
+}
+
+.seo-info-card ul li {
+  list-style: none;
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 0.5rem;
+}
+
+.seo-info-card ul li::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  mask: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.6L4 14l5 5 10-10-1.4-1.4z"/></svg>');
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.6L4 14l5 5 10-10-1.4-1.4z"/></svg>');
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+.buttonAboveLine {
+  text-align: center;
+}
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  .location-card {
+    width: 100%;
+  }
+
+  .seo-info-card {
+    width: 90%;
+  }
+}

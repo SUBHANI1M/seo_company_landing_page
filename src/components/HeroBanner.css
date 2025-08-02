@@ -2,7 +2,7 @@
 
 .hero-banner {
   height: 843px;
-  max-width: 1512px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 145px;
   display: flex;
